@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>StreetTeam</title>
+  <link href="pagina3.css" rel="stylesheet" type="text/css" />
+  <link rel='icon' href='streetteamlogo-removebg-preview.png'>
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="pesquisa">
+      <!-- 3 pontos -->
+      <div class="pesquisa1"></div>
+
+      <a href="pagina2.html" class="pesquisa2"><div class="pesquisa2">Entrar ou <br><strong>Cadastrar</strong>
+      </div></a>
+
+      <div class='pesquisa3'>Central de<strong> Atendimento</strong></div>
+
+      <!-- Carrinho -->
+
+          <button class="pesquisa4">
+            <a href="pagina3.html">
+              <img src="carrinho-removebg-preview.png" alt="Carrinho">
+          </button>
+      </a>
+
+      <!-- Logo/inicio -->
+          <button class="pesquisa5">
+            <a href="index.html">
+              <img src="streetteamlogo-removebg-preview.png" alt="Inicio">
+          </button>
+      </a>
+
+      <div class='pesquisa6'>
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="Digite o que você procura">
+
+        </form>
+      </div>
+    </div>
+  </div>    
+
+    <div id="itensCarrinho">
+      <div class="itemPrincipal"><strong>Meu Carrinho</strong>
+      <div class="itemValor2"><strong>Camiseta SufGang Rosa</strong><br> Codigo do produto:09876321</div></div>
+
+      <div class="itemResumo"
+        <strong>Resumo</strong><br><strong></strong> <span id="itemCount"></span>
+        <br>
+        <button id="decreaseVolume">-</button>
+        <button id="increaseVolume">+</button>
+        <div class="Total">
+          <pre>
+
+
+
+<strong>Valor total: <span id="totalPrice">R$229,99</span></strong></pre>
+        </div>
+      </div>
+
+
+
+      <button class='itemFinalizar' onmouseover = 'expandCard(this)' onmouseout = 'collapseCard(this)' onclick = 'showmoreInfo()' >Continuar Compra </button>
+    </div>
+
+    <script src = "pagina3.js"></script>
+
+</body>
+</html>

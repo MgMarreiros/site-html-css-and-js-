@@ -1,0 +1,838 @@
+html {
+  height: 1080px;
+  width: 1760;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+  height: 100%;
+  width: 100%;
+}
+
+#container{
+  width:100%;
+  margin:auto;
+
+}
+
+#pixdesc{
+  background-color:white;
+  color:grey;
+  height:10px;
+  width:100%;
+  text-align:center;
+
+}
+
+#pesquisa{
+  background-color:black;
+  width:100%;
+  height:125px;
+  margin-top:15px;
+}
+
+.pesquisa1{ /*3 pontos*/
+  background-image:url("menusite-removebg-preview.png");
+  height:100px;
+  width:100px;
+  background-size:100px;
+  padding-top:1px;
+  background-position:center;
+  margin-left:100px;
+  margin-top:10px;
+}
+
+.pesquisa2{
+  color:white;
+  font-size:20px;
+  margin-top:-90px;
+  padding-left:170px;
+  padding-top:-251px;
+  text-align:center;
+  width:50px;
+  height:50px;
+  margin-left:80px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pesquisa3{ /*nuvem*/
+  background-image:url("comentario2-removebg-preview.png");
+  height:50px;
+  width: 50px;
+  background-size:50px;
+  margin-top:-61px;
+  margin-left:380px;
+  color:white;
+  padding-left:60px;
+  background-repeat: no-repeat;
+}
+
+.pesquisa4 { /* carrinho */
+  background: none;
+  border: none; 
+  cursor: pointer;
+  height: 70px;
+  width: 120px;
+  margin-left: 550px;
+  margin-top: -90px;
+}
+
+.pesquisa4 img {
+  width: 70px; 
+  height: 70px;
+}
+
+.pesquisa5 {
+  background: none;
+  border: none; 
+  cursor: pointer;
+  height: 70px; 
+  width: 120px;
+  margin-left: 770px;
+  margin-top: -90px;
+  display: flex;
+}
+
+.pesquisa5 img {
+  width: 300px; 
+  height: 100px;
+}
+
+.pesquisa6{
+  text-align:center;
+  padding-left:1000px;
+  margin-top:-45px;
+}
+
+.search-container{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+input#search-bar{
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+  &:focus{
+    border: 1px solid #000000;
+    transition: 0.35s ease;
+    color: #000000;
+    &::-webkit-input-placeholder{
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease; 
+      opacity: 0;
+     }
+    &:-ms-placeholder {
+     transition: opacity 0.45s ease; 
+     opacity: 0;
+     }    
+   }
+ }
+
+.search-icon{
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -45px;
+}
+
+#itens{
+  background-color:black;
+  height:80px;
+  width:100%;
+  margin-top:-5px;
+  color:white;
+  font-size:25px;
+}
+.menu-itens {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+#dvSlider {
+  height: 500px;
+  width: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  border-radius: 250px;
+  margin-left: 330px;
+  position: relative;
+}
+
+.btn{
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.botao-menos, .botao-mais {
+  height: 40px;
+  width: 60px;
+  background: black;
+  color: white;
+  position: absolute;
+  margin-top: 220px;
+  opacity:0.9;
+}
+.botao-menos {
+  margin-left: -10px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.botao-mais {
+  margin-left: 1150px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.marca-banner {
+  height: auto;
+  margin-top: 15px;
+}
+
+#infor{
+  background-color:white;
+  width:100%;
+  height:100px;
+  margin-top:10px;
+}
+
+.item1{
+  width:50px;
+  height:50px;
+  background-image:url("caminhão-removebg-preview.png");
+  background-size:50px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  margin-left:360px;
+  padding-left:120px;
+  font-size:15px;
+  font-family:century gothic;
+
+}
+
+.item2{
+  width:50px;
+  height:50px;
+  background-image:url("cartão-removebg-preview.png");
+  background-size:45px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  margin-left:100px;
+  padding-left:120px;
+  font-size:15px;
+  font-family:century gothic;
+}
+
+.item3{
+  width:50px;
+  height:50px;
+  background-image:url("pix-removebg-preview.png");
+  background-size:45px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  margin-left:100px;
+  padding-left:120px;
+  font-size:15px;
+  font-family:century gothic;
+}
+
+.item4{
+  width:50px;
+  height:50px;
+  background-image:url("cadeado-removebg-preview.png");
+  background-size:45px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  margin-left:100px;
+  padding-left:120px;
+  font-size:15px;
+  font-family:century gothic;
+}
+
+#marcas{
+  width:100%;
+  height:150px;
+  background-color:white;
+  margin-top:-30px;
+}
+
+.marca1{
+  background-image:url("banner_barra_principal_mobile-ttxwlojz48.png");
+  height:250px;
+  width:350px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  background-size:350px;
+  margin-left:380px;
+}
+.marca1:hover{
+  opacity:0.9;
+}
+
+.marca2{
+  background-image:url("2024_sb_banners_medio-xz17a0un16.jpg");
+  height:250px;
+  width:350px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:center;
+  background-size:350px;
+  margin-left:15px;
+}
+.marca2:hover{
+  opacity:0.9;
+}
+
+.marca3{
+  background-image:url("2024_sb_banners_medio_3-nstw5sf251.jpg");
+  height:250px;
+  width:350px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  background-position:right;
+  background-size:350px;
+ margin-left:15px;
+}
+.marca3:hover{
+  opacity:0.9;
+}
+#mvendidos{
+  width:195px;
+  height:35px;
+  margin-top:180px;
+  font-size:28px;
+  margin-left:380px;
+  font-family:century gothic;
+  border-bottom:5px solid black;
+}
+#mvendidos:hover{
+  color:red;
+}
+.confira{
+  width: 400px;
+  height:28px;
+  font-size:20px;
+  margin-left:205px;
+  margin-top:-26px;
+  color:grey;
+  border-bottom:2px solid red;
+}
+
+#vendas{
+  width:240px;
+  height:100px;
+  margin-top:25px;
+  margin-left:220px;
+}
+
+.venda1{
+  width:50px;
+  height:50px;
+  background-image:url("36fb9080fa-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+}
+.venda11{
+  width:185px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:50px;
+}
+.venda11:hover{
+  background-color:lightgray;
+}
+
+.venda2{
+  width:280px;
+  height:50px;
+  background-image:url("short-circular-refletivo-preto-frente-e2kxedv1c8-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.venda22{
+  width:260px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:20px;
+  text-align:center;
+}
+.venda22:hover{
+  background-color:lightgray;
+}
+
+.venda3{
+  width:240px;
+  height:50px;
+  background-image:url("jaqueta-goods-logo-classic-preta-frente-df55uj1mof-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+  margin-top:20px;
+}
+
+.venda33{
+  width:210px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:20px;
+  text-align:center;
+}
+.venda33:hover{
+  background-color:lightgray;
+}
+
+.venda4{
+  width:240px;
+  height:50px;
+  background-image:url("boy-suf-gang-vermelho-frente-dzqx0697s2-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+  margin-top:20px;
+}
+.venda44{
+  width:210px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:25px;
+  text-align:center;
+}
+.venda44:hover{
+  background-color:lightgray;
+}
+
+.venda5{
+  width:260px;
+  height:50px;
+  background-image:url("002-t922ngk23x-removebg-preview.png");
+  background-size:360px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:320px;
+  padding-left:40px;
+  margin-top:20px;
+}
+.venda55{
+  width:230px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:25px;
+  text-align:center;
+}
+.venda55:hover{
+  background-color:lightgray;
+}
+
+#lança{
+  width:195px;
+  height:35px;
+  margin-top:80px;
+  font-size:28px;
+  margin-left:380px;
+  font-family:century gothic;
+  border-bottom:5px solid black;
+}
+#lança:hover{
+  color:darkblue;
+}
+.novidades{
+  width: 400px;
+  height:28px;
+  font-size:20px;
+  margin-left:205px;
+  margin-top:-26px;
+  color:grey;
+  border-bottom:2px solid darkblue;
+}
+
+#lançamento{
+  width:240px;
+  height:100px;
+  margin-top:25px;
+  margin-left:220px;
+}
+.lançamento1{
+  width:50px;
+  height:50px;
+  background-image:url("camisa-pescador-preta-gavgzxqlov-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+}
+.lançamento11{
+  width:185px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:50px;
+}
+.lançamento11:hover{
+  background-color:lightgray;
+}
+
+.lançamento2{
+  width:280px;
+  height:50px;
+  background-image:url("mad_mar_2024_00088-2sbn2e78id-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.lançamento22{
+  width:260px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:20px;
+  text-align:center;
+}
+.lançamento22:hover{
+  background-color:lightgray;
+}
+
+.lançamento3{
+  width:240px;
+  height:50px;
+  background-image:url("toca-goods-02-1rv4o2y3hb-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+  margin-top:20px;
+}
+
+.lançamento33{
+  width:210px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:20px;
+  text-align:center;
+}
+.lançamento33:hover{
+  background-color:lightgray;
+}
+
+.lançamento4{
+  width:240px;
+  height:50px;
+  background-image:url("crewneck-barra-textura-frente-feea275dl9-removebg-preview.png");
+  background-size:300px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:40px;
+  margin-top:20px;
+}
+.lançamento44{
+  width:210px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:25px;
+  text-align:center;
+}
+.lançamento44:hover{
+  background-color:lightgray;
+}
+
+.lançamento5{
+  width:260px;
+  height:50px;
+  background-image:url("calca-jeans-grafite-frente-2f9ru61xjl-removebg-preview.png");
+  background-size:360px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:320px;
+  padding-left:80px;
+  margin-top:20px;
+}
+.lançamento55{
+  width:230px;
+  height:20px;
+  font-size:20px;
+  padding-top:25px;
+  padding-left:10px;
+  text-align:center;
+}
+.lançamento55:hover{
+  background-color:lightgray;
+}
+
+#marcaescolha{
+  width:275px;
+  height:35px;
+  margin-top:80px;
+  font-size:28px;
+  margin-left:380px;
+  font-family:century gothic;
+}
+#marcaescolha:hover{
+  color:grey;
+}
+
+#escolha{
+  width:240px;
+  height:100px;
+  margin-left:220px;
+}
+.escolha1{
+  width:240px;
+  height:50px;
+  background-image:url("20545887-h1kdjpvak9-removebg-preview.png");
+  background-size:230px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+
+}
+.escolha1:hover{
+  opacity:0.9;
+}
+
+.escolha2{
+  width:240px;
+  height:50px;
+  background-image:url("20868767-4kwhscvqka-removebg-preview.png");
+  background-size:230px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.escolha2:hover{
+   opacity:0.9;
+}
+
+.escolha3{
+  width:240px;
+  height:50px;
+  background-image:url("20490972-41fvn9nuuh-removebg-preview.png");
+  background-size:230px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.escolha3:hover{
+   opacity:0.9;
+}
+
+.escolha4{
+  width:240px;
+  height:50px;
+  background-image:url("20592960-v6nzgbdllv-removebg-preview.png");
+  background-size:230px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.escolha4:hover{
+   opacity:0.9;
+}
+
+.escolha5{
+  width:240px;
+  height:50px;
+  background-image:url("19871668-knjo84ak2v-removebg-preview.png");
+  background-size:230px;
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-top:280px;
+  padding-left:50px;
+  background-position:center;
+}
+.escolha5:hover{
+   opacity:0.9;
+}
+
+#final{
+  width:100%;
+  height:400px;
+  background-color:black;
+  background-image:url('streetteamlogo-removebg-preview.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:600px;
+  margin-top:15px;
+}
+.final1{
+  font-size:30px;
+  color:white;
+  width:200px;
+  height:150px;
+  background-image:url("logo-pac1.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:85px;
+}
+.final2{
+  height:150px;
+  width:150px;
+  background-image:url("logo-sedex1.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100px;
+  margin-top:-90px;
+  margin-left:20px;
+}
+.final3{
+  height:150px;
+  width:150px;
+  background-image:url("motoboy.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:130px;
+  margin-top:-95px;
+  margin-left:-10px;
+}
+.final4{
+  font-size:30px;
+  color:white;
+  padding-left:85px;
+  margin-top:-265px;
+  margin-left:200px;
+}
+.final5{
+  width:200px;
+  height:150px;
+  background-image:url("stamp_encryptssl.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:130px;
+  margin-left:290px;
+  margin-top:-30px;
+}
+.final6{
+  width:200px;
+  height:150px;
+  background-image:url("stamp_google_safe_browsing.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:130px;
+  margin-left:290px;
+  margin-top:-70px;
+}
+.final7{
+  color:white;
+}
+.final8{
+  color:white;
+}
+.final9{
+  color:white;
+}
+.final10{
+  color:white;
+}
+.final11{
+  color:white;
+  margin-top:-300px;
+  margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final11:hover{
+  color:gray;
+}
+.final12{
+  color:white;
+   margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final12:hover{
+  color:gray;
+}
+.final13{
+  color:white;
+   margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final13:hover{
+  color:gray;
+}
+.final14{
+  color:white;
+   margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final14:hover{
+  color:gray;
+}
+.final15{
+  color:white;
+   margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final15:hover{
+  color:gray;
+}
+.final16{
+  color:white;
+   margin-left:1250px;
+  text-align:center;
+  font-size:25px;
+}
+.final16:hover{
+  color:gray;
+}
+
+/*  */

@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+#container {
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid black;
+  min-height: 500px;
+  margin-top: 100px;
+  background-color: white;
+  font-size: 24px;
+  padding: 30px;
+  border-radius: 10px;
+  /* background-image: url('streetteamlogo-removebg-preview.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+}
+
+#login {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: black;
+  background-size: 30px;
+  background-position: center;
+  padding: 10px 20px;
+  padding-left: 100px;
+}
+
+.voltar {
+  height: 40px;
+  width: 30px;
+  background-color: black;
+  background-image: url('icons8-casa-50.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left;
+  margin-left: -100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+} 
+
+.voltar:hover {
+  background-color: black;
+}
+
+#email {
+  text-align: left;
+  font-size: 24px;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+#email p {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.finalizar {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  text-align: center;
+  transition: background 0.3s;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.finalizar:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  #login {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .finalizar {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container {
+    width: 85%;
+    font-size: 22px;
+  }
+
+  .finalizar {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

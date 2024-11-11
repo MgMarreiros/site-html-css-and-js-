@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetTeam</title>
+  <link href="pagina2.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="streetteamlogo-removebg-preview.png">
+</head>
+<body>
+  <div id="container">
+    <div id="login">
+      <button class="voltar" <a href="index.html" onclick="window.history.back()"></button> Login
+    </a></div>
+    <div id="email">
+      <form method="post" action="site.py">
+        <p><label for="email">E-mail:
+          <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
+        </label></p>
+        <p><label for="senha">Senha:
+          <input type="password" name="senha" id="senha" maxlength="8" required placeholder="8 dígitos">
+        </label></p>
+        <a href="https://029163ef-1425-48b0-b71b-b9f496d0bfd7-00-1emwgy3zs6otq.spock.replit.dev/index.html">
+          <button class="item finalizar" onmouseover="expandCard(this)" onmouseout="collapseCard(this)" onclick="showmoreInfo()">Entrar</button>
+        </a>
+      </form>
+    </div>
+  </div>
+
+  <script src="pagina2.js"></script>
+</body>
+</html>
